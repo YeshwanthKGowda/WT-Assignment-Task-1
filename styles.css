@@ -1,0 +1,107 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f7f9fb;
+    color: #333;
+  }
+  
+  header {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    font-size: 1.1rem;
+    margin-top: 5px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    padding: 0 20px 40px;
+  }
+  
+  .product-card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    position: relative;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .product-card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0 5px;
+  }
+  
+  .product-card p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #27ae60;
+  }
+  
+  .add-to-cart {
+    background: #2980b9;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+  }
+  
+  .add-to-cart:hover {
+    background: #21618c;
+  }
+  
+  .badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #e74c3c;
+    color: white;
+    padding: 5px 8px;
+    font-size: 0.75rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  footer {
+    background-color: #f1f1f1;
+    padding: 15px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
